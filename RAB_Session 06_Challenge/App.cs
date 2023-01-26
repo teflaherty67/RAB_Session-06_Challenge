@@ -10,7 +10,7 @@ using System.Diagnostics;
 #endregion
 
 namespace RAB_Session_06_Challenge
-{{
+{
     internal class App : IExternalApplication
     {
         public Result OnStartup(UIControlledApplication a)
@@ -78,16 +78,16 @@ namespace RAB_Session_06_Challenge
 
             // step 5: add tool tips
 
-            pData1.ToolTip = "Tool 1 tool tip";
-            pData2.ToolTip = "Tool 2 tool tip";
-            pData3.ToolTip = "Tool 1 tool tip";
-            pData4.ToolTip = "Tool 2 tool tip";
-            pData5.ToolTip = "Tool 1 tool tip";
-            pData6.ToolTip = "Tool 2 tool tip";
-            pData7.ToolTip = "Tool 1 tool tip";
-            pData8.ToolTip = "Tool 2 tool tip";
-            pData9.ToolTip = "Tool 1 tool tip";
-            pData10.ToolTip = "Tool 2 tool tip";
+            pData1.ToolTip = "Deletes Revisions in project";
+            pData2.ToolTip = "Deletes Buckup files in selected folder";
+            pData3.ToolTip = "Mirrors project along specified axis";
+            pData4.ToolTip = "Reverses all door swings";
+            pData5.ToolTip = "Renames the side elevations";
+            pData6.ToolTip = "Sets up all Levels, Views & Sheets for a new project";
+            pData7.ToolTip = "Sets up al Views & Sheets for a new elevation in an existing project";
+            pData8.ToolTip = "Renumbers Views on a Sheet";
+            pData9.ToolTip = "Batch Sheet Rename";
+            pData10.ToolTip = "Batch View Rename";
 
             // step 6: create buttons
 
