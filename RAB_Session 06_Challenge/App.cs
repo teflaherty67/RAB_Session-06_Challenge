@@ -10,33 +10,30 @@ using System.Reflection;
 using System.Drawing;
 using System.Windows.Media.Imaging;
 using System.IO;
-
 #endregion
 
 namespace RAB_Session_06_Challenge
 {
     internal class App : IExternalApplication
     {
-        public Result OnStartup(UIControlledApplication a)
+        public Result OnStartup(UIControlledApplication app)
         {
             string assemblyName = Utils.GetAssemblyName();
 
-            // step 1: create ribbon tab (if needed)
+            // step 1: create ribbon tab
 
             try
             {
-                a.CreateRibbonTab("Revit Add-in Bootcamp");
+                app.CreateRibbonTab("Revit Add-in Bootcamp");
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                TaskDialog.Show("Error", "Ribbon tab already exists.");
-                Debug.Print(ex.Message);
-                return Result.Failed;
+                Debug.Print("Tab already exists");
             }
 
-            // step 2: create ribbon panel(s)
+            // step 2: create ribbon panel
 
-            RibbonPanel panel1 = a.CreateRibbonPanel("Revit Add-in Bootcamp", "Revit Tools");            
+            RibbonPanel panel1 = Utils.CreateRibbonPanel(app, "Revit Add-in Bootcamp", "Revit Tools");           
 
             // step 3: create Tool data instances
 
@@ -112,7 +109,7 @@ namespace RAB_Session_06_Challenge
             return Result.Succeeded;
         }
 
-        public Result OnShutdown(UIControlledApplication a)
+        public Result OnShutdown(UIControlledApplication app)
         {
             return Result.Succeeded;
         }

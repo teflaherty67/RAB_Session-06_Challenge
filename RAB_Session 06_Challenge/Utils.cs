@@ -7,6 +7,7 @@ using System.Reflection;
 using System.Drawing;
 using System.IO;
 using System.Windows.Media.Imaging;
+using Autodesk.Revit.UI;
 
 namespace RAB_Session_06_Challenge
 {
@@ -26,6 +27,11 @@ namespace RAB_Session_06_Challenge
 
                 return bmi;
             }
+        }
+
+        internal static RibbonPanel CreateRibbonPanel(string v1, string v2)
+        {
+            throw new NotImplementedException();
         }
 
         internal static string GetAssemblyName()
