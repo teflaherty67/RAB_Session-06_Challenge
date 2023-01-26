@@ -46,10 +46,10 @@ namespace RAB_Session_06_Challenge
             PushButtonData pData4 = new PushButtonData("button4", "Tool 4", assemblyName, "RAB_Session_06_Challenge.cmdTool04");
             PushButtonData pData5 = new PushButtonData("button5", "Tool 5", assemblyName, "RAB_Session_06_Challenge.cmdTool05");
             PushButtonData pData6 = new PushButtonData("button6", "Tool 6", assemblyName, "RAB_Session_06_Challenge.cmdTool06");
-            PushButtonData pData7 = new PushButtonData("button3", "Tool 3", assemblyName, "RAB_Session_06_Challenge.cmdTool07");
-            PushButtonData pData8 = new PushButtonData("button4", "Tool 4", assemblyName, "RAB_Session_06_Challenge.cmdTool08");
-            PushButtonData pData9 = new PushButtonData("button5", "Tool 5", assemblyName, "RAB_Session_06_Challenge.cmdTool09");
-            PushButtonData pData10 = new PushButtonData("button6", "Tool 6", assemblyName, "RAB_Session_06_Challenge.cmdTool10");
+            PushButtonData pData7 = new PushButtonData("button3", "Tool 7", assemblyName, "RAB_Session_06_Challenge.cmdTool07");
+            PushButtonData pData8 = new PushButtonData("button4", "Tool 8", assemblyName, "RAB_Session_06_Challenge.cmdTool08");
+            PushButtonData pData9 = new PushButtonData("button5", "Tool 9", assemblyName, "RAB_Session_06_Challenge.cmdTool09");
+            PushButtonData pData10 = new PushButtonData("button6", "Tool 10", assemblyName, "RAB_Session_06_Challenge.cmdTool10");
 
             PulldownButtonData pullDownData1 = new PulldownButtonData("pulldown1", "More Tools");
 
@@ -75,8 +75,8 @@ namespace RAB_Session_06_Challenge
             pData8.Image = Utils.BitmapToImageSource(RAB_Session_06_Challenge.Properties.Resources.Green_16);
             pData9.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Challenge.Properties.Resources.Blue_32);
             pData9.Image = Utils.BitmapToImageSource(RAB_Session_06_Challenge.Properties.Resources.Blue_16);
-            pData9.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Challenge.Properties.Resources.Red_32);
-            pData9.Image = Utils.BitmapToImageSource(RAB_Session_06_Challenge.Properties.Resources.Red_16);
+            pData10.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Challenge.Properties.Resources.Red_32);
+            pData10.Image = Utils.BitmapToImageSource(RAB_Session_06_Challenge.Properties.Resources.Red_16);
 
             pullDownData1.LargeImage = Utils.BitmapToImageSource(RAB_Session_06_Challenge.Properties.Resources.Blue_32);
 

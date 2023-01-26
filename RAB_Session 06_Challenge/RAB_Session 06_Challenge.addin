@@ -1,14 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<RevitAddIns>
-  <AddIn Type="Command">
-    <Text>Command RAB_Session 06_Challenge</Text>
-    <Description>Some description for RAB_Session 06_Challenge</Description>
-    <Assembly>RAB_Session 06_Challenge.dll</Assembly>
-    <FullClassName>RAB_Session_06_Challenge.Command</FullClassName>
-    <ClientId>b860aa96-f771-4530-a20d-553b6c8cea44</ClientId>
-    <VendorId>T Edward</VendorId>
-    <VendorDescription>T Edward Coder</VendorDescription>
-  </AddIn>
+<RevitAddIns>  
   <AddIn Type="Application">
     <Name>Application RAB_Session 06_Challenge</Name>
     <Assembly>RAB_Session 06_Challenge.dll</Assembly>
