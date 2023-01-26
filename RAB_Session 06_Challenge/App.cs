@@ -6,6 +6,10 @@ using Autodesk.Revit.UI;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Reflection;
+using System.Drawing;
+using System.Windows.Media.Imaging;
+using System.IO;
 
 #endregion
 
@@ -47,7 +51,7 @@ namespace RAB_Session_06_Challenge
             PushButtonData pData9 = new PushButtonData("button5", "Tool 5", assemblyName, "RAB_Session_06_Challenge.cmdTool09");
             PushButtonData pData10 = new PushButtonData("button6", "Tool 6", assemblyName, "RAB_Session_06_Challenge.cmdTool10");
 
-            PulldownButtonData pullDownData1 = new PulldownButtonData("pulldown1", "Pulldown Button");
+            PulldownButtonData pullDownData1 = new PulldownButtonData("pulldown1", "More Tools");
 
             SplitButtonData splitData1 = new SplitButtonData("split1", "Split Button");
 
@@ -94,15 +98,16 @@ namespace RAB_Session_06_Challenge
             panel1.AddItem(pData1);
             panel1.AddItem(pData2);
 
-            SplitTool split1 = panel1.AddItem(splitData1) as SplitButton;
-            split1.AddPushButton(pData3);
-            split1.AddPushButton(pData4);
+            panel1.AddStackedItems(pData3, pData4, pData5);
 
-            PulldownTool pull1 = panel2.AddItem(pullDownData1) as PulldownButton;
-            pull1.AddPushButton(pData5);
-            pull1.AddPushButton(pData6);
+            SplitButton split1 = panel1.AddItem(splitData1) as SplitButton;
+            split1.AddPushButton(pData6);
+            split1.AddPushButton(pData7);
 
-            panel3.AddStackedItems(pData1, pData2, pData3);
+            PulldownButton pull1 = panel1.AddItem(pullDownData1) as PulldownButton;
+            pull1.AddPushButton(pData8);
+            pull1.AddPushButton(pData9);
+            pull1.AddPushButton(pData10);            
 
             return Result.Succeeded;
         }
