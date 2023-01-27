@@ -50,7 +50,7 @@ namespace RAB_Session_06_Challenge
 
             PulldownButtonData pullDownData1 = new PulldownButtonData("pulldown1", "More Tools");
 
-            SplitButtonData splitData1 = new SplitButtonData("split1", "Split Button");
+            SplitButtonData splitData1 = new SplitButtonData("split1", "Split\rButton");
 
             // step 4: add images
 

@@ -29,9 +29,25 @@ namespace RAB_Session_06_Challenge
             }
         }
 
-        internal static RibbonPanel CreateRibbonPanel(string v1, string v2)
+        internal static RibbonPanel CreateRibbonPanel(UIControlledApplication app, string tabName, string panelName)
         {
-            throw new NotImplementedException();
+            RibbonPanel curPanel = GetRibbonPanelByName(app, tabName, panelName);
+
+            if (curPanel == null)
+                curPanel = app.CreateRibbonPanel(tabName, panelName);
+
+            return curPanel;
+        }
+
+        private static RibbonPanel GetRibbonPanelByName(UIControlledApplication app, string tabName, string panelName)
+        {
+            foreach (RibbonPanel tempPanel in app.GetRibbonPanels(tabName))
+            {
+                if (tempPanel.Name == panelName)
+                    return tempPanel;
+            }
+
+            return null;
         }
 
         internal static string GetAssemblyName()
