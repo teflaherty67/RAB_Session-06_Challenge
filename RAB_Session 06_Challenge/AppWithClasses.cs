@@ -14,7 +14,7 @@ using System.IO;
 
 namespace RAB_Session_06_Challenge
 {
-    internal class App : IExternalApplication
+    internal class AppWithClasses : IExternalApplication
     {
         public Result OnStartup(UIControlledApplication app)
         {
@@ -33,7 +33,7 @@ namespace RAB_Session_06_Challenge
 
             // step 2: create ribbon panel
 
-            RibbonPanel panel1 = Utils.CreateRibbonPanel(app, "Revit Add-in Bootcamp", "Revit Tools");           
+            RibbonPanel panel1 = Utils.CreateRibbonPanel(app, "Revit Add-in Bootcamp", "Revit Tools");
 
             // step 3: create Tool data instances
 
@@ -104,7 +104,7 @@ namespace RAB_Session_06_Challenge
             PulldownButton pull1 = panel1.AddItem(pullDownData1) as PulldownButton;
             pull1.AddPushButton(pData8);
             pull1.AddPushButton(pData9);
-            pull1.AddPushButton(pData10);            
+            pull1.AddPushButton(pData10);
 
             return Result.Succeeded;
         }
@@ -114,4 +114,20 @@ namespace RAB_Session_06_Challenge
             return Result.Succeeded;
         }
     }
+
+    public class ButtonClass
+    {
+        public PushButtonData Data { get; set; }
+
+        public ButtonClass(string name, string text, string className, System.Drawing.Bitmap largeImage,
+            System.Drawing.Bitmap smallImage, string toolTip)
+        {
+            Data = new PushButtonData(name, text, Utils.GetAssemblyName(), className);
+            Data.ToolTip = toolTip;
+            Data.LargeImage = Utils.BitmapToImageSource(largeImage);
+            Data.Image = Utils.BitmapToImageSource(smallImage);
+        }
+    }
+
+
 }
