@@ -85,7 +85,7 @@ namespace RAB_Session_06_Challenge
             pData4.ToolTip = "Reverses all door swings";
             pData5.ToolTip = "Renames the side elevations";
             pData6.ToolTip = "Sets up all Levels, Views & Sheets for a new project";
-            pData7.ToolTip = "Sets up al Views & Sheets for a new elevation in an existing project";
+            pData7.ToolTip = "Sets up all Views & Sheets for a new elevation in an existing project";
             pData8.ToolTip = "Renumbers Views on a Sheet";
             pData9.ToolTip = "Batch Sheet Rename";
             pData10.ToolTip = "Batch View Rename";
