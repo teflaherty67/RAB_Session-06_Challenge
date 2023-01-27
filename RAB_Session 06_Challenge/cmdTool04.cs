@@ -25,7 +25,7 @@ namespace RAB_Session_06_Challenge
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-            TaskDialog.Show("Tool 4", "This will launch Reverse Elevations");
+            TaskDialog.Show("Tool 4", "This will launch Reverse Door Swings");
 
             return Result.Succeeded;
         }

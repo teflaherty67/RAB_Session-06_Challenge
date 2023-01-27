@@ -25,7 +25,7 @@ namespace RAB_Session_06_Challenge
             Application app = uiapp.Application;
             Document doc = uidoc.Document;
 
-            TaskDialog.Show("Tool 5", "This will launch Elevation Reorder");
+            TaskDialog.Show("Tool 5", "This will launch Elevation Rename");
 
             return Result.Succeeded;
         }

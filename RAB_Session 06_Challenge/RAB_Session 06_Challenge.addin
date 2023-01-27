@@ -3,7 +3,7 @@
   <AddIn Type="Application">
     <Name>Application RAB_Session 06_Challenge</Name>
     <Assembly>RAB_Session 06_Challenge.dll</Assembly>
-    <FullClassName>RAB_Session_06_Challenge.App</FullClassName>
+    <FullClassName>RAB_Session_06_Challenge.AppWithClasses</FullClassName>
     <ClientId>bd3fff31-23e1-4461-b3bd-1f16796b5d3e</ClientId>
     <VendorId>T Edward</VendorId>
     <VendorDescription>T Edward Coder</VendorDescription>
